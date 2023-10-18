@@ -1,0 +1,84 @@
+h1 {
+    color: darkblue;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-stroke-width: 0.04em;
+    -webkit-text-stroke-color: white;
+}
+.big{
+    display: flex;
+    font-size: 3em;
+    justify-content: center;
+    -webkit-text-stroke-width: 0.04em;
+}
+h2 {
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-color: black;
+    color: white;
+}
+
+nav {
+    background-color: white;
+    color: black;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+nav li:hover{
+    background-color: red;
+    font-size: 3em;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: xx-large;
+}
+header{
+    background-image: url("./titan.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+@media only screen and (max-width: 600px) {
+    nav {
+      display: none;
+      position: relative;
+    }
+
+    #menu-icon {
+      display: block;
+    }
+
+    ul {
+      display: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    #menu-icon {
+      display: block;
+    }
+
+    #menu-icon:hover ul {
+      display: block;
+      position: absolute;
+    }
+  }
